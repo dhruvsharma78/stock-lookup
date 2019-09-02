@@ -61,7 +61,9 @@ export default class companyinfo extends Component {
         <div className="pair">
           <h4 className="key">Employees</h4>
           <h4 className="value">
-            {`${data.employees} | ${numberToWords(data.employees)}`}
+            {data.employees
+              ? `${data.employees} | ${numberToWords(data.employees)}`
+              : 'Data Unavailable'}
           </h4>
         </div>
         <div className="pair">

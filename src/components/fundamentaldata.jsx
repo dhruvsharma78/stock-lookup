@@ -54,11 +54,7 @@ export default class fundamentaldata extends Component {
         <div className="pair">
           <h4 className="key">Volume</h4>
           <h4 className="value">
-            {`${
-              data.latestVolume
-                ? data.latestVolume
-                : 'Unavailable - Markets Closed'
-            } 
+            {`${data.latestVolume ? data.latestVolume : 'Markets Closed'} 
           | 
           ${numberToWords(data.latestVolume)}`}
           </h4>

@@ -4,6 +4,8 @@ import Header from './components/header';
 import SearchBar from './components/searchbar';
 import StockInfo from './components/stockinfo';
 
+import './app.css';
+
 const APP_TITLE = 'Stock Lookup';
 
 export default class App extends Component {
@@ -70,7 +72,7 @@ export default class App extends Component {
           <Header title={APP_TITLE} />
           <div className="app-loading">
             <h1 className="loading">{`${APP_TITLE} is loading...`}</h1>
-            <h2 className="wai">Please Wait</h2>
+            <h2 className="wait">Please Wait</h2>
           </div>
         </div>
       );

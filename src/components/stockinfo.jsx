@@ -70,17 +70,17 @@ export default class stockinfo extends Component {
   updateData = () => {
     const { ticker } = this.state;
     this.getData(
-      `https://cloud.iexapis.com/stable/stock/${ticker}/news/last/10?token=pk_eddadd62459549a69603401427a1103b`,
+      `https://cloud.iexapis.com/stable/stock/${ticker}/news/last/10?token=${process.env.REACT_APP_IEX_API_KEY}`,
       'newsData',
     );
 
     this.getData(
-      `https://cloud.iexapis.com/stable/stock/${ticker}/quote?token=pk_eddadd62459549a69603401427a1103b`,
+      `https://cloud.iexapis.com/stable/stock/${ticker}/quote?token=${process.env.REACT_APP_IEX_API_KEY}`,
       'quoteData',
     );
 
     this.getData(
-      `https://cloud.iexapis.com/stable/stock/${ticker}/company?token=pk_eddadd62459549a69603401427a1103b`,
+      `https://cloud.iexapis.com/stable/stock/${ticker}/company?token=${process.env.REACT_APP_IEX_API_KEY}`,
       'companyData',
     );
   };

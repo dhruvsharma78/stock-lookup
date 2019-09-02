@@ -56,3 +56,10 @@
 .hero .pricedata .movement .abs-movement {
   font-size: 0.75em;
 }
+
+@media only screen and (max-width: 1200px) {
+  .hero {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+}

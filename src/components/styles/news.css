@@ -5,3 +5,10 @@
   height: 40vh;
   overflow: scroll;
 }
+
+@media only screen and (max-width: 1200px) {
+  .news {
+    width: 100%;
+    height: auto;
+  }
+}

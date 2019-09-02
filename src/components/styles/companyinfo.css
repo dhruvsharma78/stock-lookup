@@ -25,3 +25,17 @@
   font-family: CalibreLight;
   overflow: scroll;
 }
+
+@media only screen and (max-width: 1200px) {
+  .company-info {
+    width: 100%;
+    font-family: CalibreLight;
+    margin-bottom: 3em;
+  }
+  .company-info .pair {
+    text-align: left;
+  }
+  .company-info .value {
+    text-align: right;
+  }
+}

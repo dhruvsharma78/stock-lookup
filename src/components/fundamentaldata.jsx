@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './styles/fundamentaldata.css';
 
 function numberToWords(number) {
+  if (!number) return '';
   if (number / 1000000000000 > 1) {
     let x = number / 1000000000000;
     x = x.toFixed(2);
@@ -53,7 +54,11 @@ export default class fundamentaldata extends Component {
         <div className="pair">
           <h4 className="key">Volume</h4>
           <h4 className="value">
-            {`${data.latestVolume} 
+            {`${
+              data.latestVolume
+                ? data.latestVolume
+                : 'Unavailable - Markets Closed'
+            } 
           | 
           ${numberToWords(data.latestVolume)}`}
           </h4>

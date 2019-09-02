@@ -1,6 +1,9 @@
 .search-bar {
-  width: 33.5em;
+  width: 65%;
   margin: 0 auto;
   margin-top: 3em;
   margin-bottom: 3.5em;
+}
+
+@media only screen and (max-width: 1200px) {
 }

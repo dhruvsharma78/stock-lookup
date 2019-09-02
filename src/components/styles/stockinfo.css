@@ -3,3 +3,24 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 1200px) {
+  .bottom {
+    margin: 3em auto;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .bottom {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .bottom {
+    width: 100%;
+  }
+}

@@ -2,6 +2,14 @@
 
 This is a simple tool to lookup stocks and get data using the IEX API.
 
+To run this app locally, go to the (iexCloud)[https://iexcloud.io] website and generate an API key.
+
+Create a file called `.env` in the root directory of this project and add the API key like this:
+
+```
+REACT_APP_IEX_API_KEY= "YOUR_KEY_HERE"
+```
+
 ### Completed work:
 
 - Searchbar that allows searching by stock ticker and company name

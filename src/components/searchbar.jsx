@@ -18,24 +18,6 @@ export default class searchbar extends Component {
     };
   }
 
-  // getTickerOptions = (value) =>
-  //   Axios.get(
-  //     `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${value}&apikey=SSTSI32JZX6KIXV3`,
-  //   ).then((res) => {
-  //     const data = res.data.bestMatches;
-  //     if (res !== undefined) {
-  //       const options = [];
-  //       for (let i = 0; i < res.length; i += 1) {
-  //         options.push({
-  //           value: data[i]['1. symbol'],
-  //           label: `${data[i]['1. symbol']} | ${data[i]['2. name']}`,
-  //         });
-  //       }
-  //       return options;
-  //     }
-  //     return [];
-  //   });
-
   getTickerOptions = (query) => {
     const { options } = this.state;
     const possibleChoices = options.filter((option) =>

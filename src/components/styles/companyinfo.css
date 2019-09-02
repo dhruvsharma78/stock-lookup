@@ -1,0 +1,27 @@
+.company-info {
+  width: 24.26%;
+  text-align: left;
+  font-family: CalibreLight;
+}
+
+.company-info .pair {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.company-info .key {
+  width: 5.1875em;
+  font-size: 0.9em;
+  color: #707070;
+  font-family: CalibreLight;
+}
+
+.company-info .value {
+  width: 70%;
+  font-size: 0.9em;
+  text-align: left;
+  max-height: 195px;
+  font-family: CalibreLight;
+  overflow: scroll;
+}

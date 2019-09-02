@@ -1,0 +1,28 @@
+.fundamental-data {
+  width: 21.58%;
+  text-align: left;
+  font-family: CalibreLight;
+}
+
+.fundamental-data .pair {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.fundamental-data .key {
+  width: 5.25em;
+  font-size: 0.9em;
+  color: #707070;
+  font-family: CalibreLight;
+}
+
+.fundamental-data .value {
+  /* flex: 1; */
+  font-size: 0.9em;
+  text-align: left;
+  max-height: 195px;
+  font-family: CalibreLight;
+  overflow: scroll;
+  width: 50%;
+}

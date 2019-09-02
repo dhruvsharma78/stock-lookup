@@ -6,6 +6,7 @@
     "axios": "^0.19.0",
     "dotenv": "^8.1.0",
     "eslint-config-prettier": "^6.1.0",
+    "netlify-cli": "^2.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -17,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "netlify": "netlify"
   },
   "eslintConfig": {
     "extends": "react-app"

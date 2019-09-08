@@ -14,7 +14,7 @@ export default class App extends Component {
     this.state = {
       stockList: null,
       optionsList: null,
-      selected: '',
+      selected: 'AAPL',
     };
   }
 

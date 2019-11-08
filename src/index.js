@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ReactGA from 'react-ga';
 
 require('dotenv').config();
+
+ReactGA.initialize('UA-148111409-2');
+ReactGA.pageview('/homepage');
+
 
 // eslint-disable-next-line react/jsx-filename-extension
 ReactDOM.render(<App />, document.getElementById('root'));

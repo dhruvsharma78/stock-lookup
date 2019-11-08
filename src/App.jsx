@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import Header from './components/header';
 import SearchBar from './components/searchbar';
@@ -45,6 +46,10 @@ export default class App extends Component {
   getSearchData = (val) => {
     this.setState({
       selected: val,
+    });
+    ReactGA.event({
+      category: 'Actions',
+      action: 'Lookup Stock'
     });
   };
 
